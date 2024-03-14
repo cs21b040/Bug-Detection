@@ -61,3 +61,12 @@ The bug detectors rely on a vector representation for identifier names and liter
 * The next three arguments are vector representations for tokens (here: identifiers and literals), for types, and for AST node types. These files are provided in the repository.
 * The remaining arguments are two lists of .json files. They contain the training and validation data extracted in Step 1.
 
+
+## Testing the model
+`node javascript/extractFromJS.js calls --files <list of files>`
+* Creates the calls_xx* file for testing dataset
+`python3 python/BugFind.py --pattern SwappedArgs --threshold 0.95 --model some/dir --token_emb token_to_vector.json --type_emb type_to_vector.json --node_emb node_type_to_vector.json --testing_data calls_xx*.json`
+* replace `some/dir` with model directory and pass generated calls_xx* in the arguments ...replace treshold if required 
+* This predicts the bug in the specific file and gives the probability that the given function call is buggy or not
+
+
