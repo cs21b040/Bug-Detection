@@ -1,0 +1,25 @@
+[
+  {
+    "base": "",
+    "callee": "ID:temp",
+    "calleeLocation": "560000630004",
+    "arguments": [
+      "ID:v",
+      "LIT:1"
+    ],
+    "argumentLocations": [
+      "560000680001",
+      "560000700001"
+    ],
+    "argumentTypes": [
+      "unknown",
+      "number"
+    ],
+    "parameters": [
+      "ID:a",
+      "ID:b"
+    ],
+    "src": "test/hi.js : 5 - 5",
+    "filename": "test/hi.js"
+  }
+]
