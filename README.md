@@ -35,18 +35,15 @@ gensim  4.3.0
 
 The bug detectors rely on a vector representation for identifier names and literals, which is stored in `token_to_vector.json` file. It is generated as follows.
 
-1) 
-`node javascript/extractFromJS.js tokens --parallel 4 data/js/programs_50_training.txt data/js/programs_50`
+1) `node javascript/extractFromJS.js tokens --parallel 4 data/js/programs_50_training.txt data/js/programs_50`
 
   * The command produces `tokens_*.json` files.
   
-2)   
-`python3 python/TokensToTopTokens.py tokens_*.json`
+2) `python3 python/TokensToTopTokens.py tokens_*.json`
   
   * The command produces `encoded_tokens_*.json` files and a file `token_to_number_*.json` that assigns a number to each identifier and literal.
 
-3) 
-`python3 python/EmbeddingLearnerWord2Vec.py token_to_number_*.json encoded_tokens_*.json`
+3) `python3 python/EmbeddingLearnerWord2Vec.py token_to_number_*.json encoded_tokens_*.json`
 
   * The command produces the file `token_to_vector_*.json`.
 
