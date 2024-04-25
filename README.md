@@ -1,4 +1,3 @@
-Research Paper:http://software-lab.org/publications/oopsla2018_DeepBugs.pdf
 
 ## Dependencies
 
@@ -29,6 +28,8 @@ sklearn - 1.3.0
 scipy 1.11.4
 tensorflow  2.12.0
 gensim  4.3.0
+
+Research Paper for base:http://software-lab.org/publications/oopsla2018_DeepBugs.pdf 
 
 # Javascript
 ## Creating Embeddings for Identifiers
