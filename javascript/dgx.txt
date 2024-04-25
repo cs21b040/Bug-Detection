@@ -1,0 +1,6 @@
+
+/home1/cs21b052/.nvm/versions/node/v7.10.1/bin/node /scratch/cs21b052/SEProject/javascript/extractFromJS.js tokens --parallel 4 /scratch/cs21b052/SEProject/data/train.txt /scratch/cs21b052/SEProject/data/data
+
+
+
+python3 /scratch/cs21b052/SEProject/python2/BugLearn.py --pattern SwappedArgs --token_emb /scratch/cs21b052/SEProject/token_to_vector*.json --type_emb /scratch/cs21b052/SEProject/type_to_vector.json --node_emb /scratch/cs21b052/SEProject/node_type_to_vector.json --training_data /scratch/cs21b052/SEProject/calls_train/calls*.json
